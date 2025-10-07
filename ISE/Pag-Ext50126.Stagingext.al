@@ -10,22 +10,16 @@ pageextension 50126 "Staging ext" extends "List Order Page"
                 Image = NewDocument;
                 ApplicationArea = All;
                 // trigger OnAction()
+                trigger OnAction()
+                begin
+
+                end;
                 // var
                 //     StagingProcessor: Codeunit "Order Staging Processor";
                 // begin
                 //     StagingProcessor.createorder(Rec);
                 // end;
-                // trigger OnAction()
-                // var
-                //     StagingProcessor: Codeunit "Order Staging Processor";
-                // begin
-                //     if not Rec."Is Order Created" then begin
-                //         StagingProcessor.CreateOrder(Rec);
-                //         Rec."Is Order Created" := true;
-                //         // Rec.Modify();
-                //         // Message('Order created manually.');
-                //     end
-                // end;
+
             }
 
         }

@@ -64,7 +64,7 @@ codeunit 50124 "Order Staging Processor"
                         PurchHeader.Validate("Document Date", StagingOrder."Document Date");
                         PurchHeader.Insert(true);
                         StagingOrder."Document No." := PurchHeader."No.";
-                        StagingOrder.Modify();
+                        StagingOrder.Modify(true);
                         LastLineNo := 0;
                     end else begin
                         PurchHeader.Get(PurchHeader."Document Type"::Order, StagingOrder."Document No.");
